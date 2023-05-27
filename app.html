@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VIEW DATA</title>
+  <style>
+    h2 {text-align: center;}
+    body {
+      background-image: url("back.png");
+      background-repeat: no-repeat;
+      background-size: 200% 200%;
+      color: white;
+      font-size: 16px;
+    }
+    table {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: inset #dddddd;
+      text-align: justify;
+      padding: 10px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+    button{
+        width: 10%;
+      height: 35px;
+
+      background-color: #CA9ACC;
+      border-radius: 5px;
+      font-weight: bold;
+      color: #fff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 14px;
+      }
+    }
+    </style>
+</head>
+<h2>READ DATA</h2>
+<body>
+  
+    <div class ="container mt-2">
+  <table id="table" class="table table-stripe">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Username</th>
+        <th>Fullname</th>
+        <th>Favorite Food</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <br>
+  <div id="button_container">
+    <button id="back" onclick="back()">BACK</button>
+  </div>
+
+</div>
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+  <script src="app.js"></script>
+  
+</body>
+</html>
